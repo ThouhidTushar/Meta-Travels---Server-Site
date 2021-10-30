@@ -42,6 +42,10 @@ app.get('/', (req, res) => {
 	res.send('Meta Travels Server Is Running')
 })
 
+app.get('/hello', (req, res) => {
+	res.send('hello updated here')
+})
+
 app.listen(port, () => {
 	console.log('running sever on port', port);
 })
